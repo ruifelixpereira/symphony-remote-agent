@@ -82,6 +82,6 @@ Explore one or both options to deploy your solution in the remote target:
 To stop the demo, shut down both the API process and the agent process. By default, they are both configured to use in-memory state, so no additional cleanup is needed. To repeat the demo, relaunch the processes and re-send the requests.
 
 
-## Notes
+## Troubleshooting and notes
 
-Check the list of [notes](docs/notes.md) that might be helpful in some cases.
+Check the list of [notes](docs/notes.md) that provide hints and might be helpful for troubleshooting issues.
