@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "name": "stuff-campaign"
+    },
+    "spec": {
+        "firstStage": "run_stuff",
+        "stages": {
+            "run_stuff": {
+                "name": "run_stuff",
+                "description": "run bash stuff on target",
+                "provider": "providers.stage.script",
+                "config": {
+                    "name": "run_stuff",
+                    "script": "run_stuff.sh",
+                    "scriptEngine": "bash",
+                    "scriptFolder": "/home/rfp/workbase/dev/symphony-demo/sdv-toolchain/scenarios/remote_agent/campaign/local",
+                    "stagingFolder": "/home/rfp/workbase/dev/symphony-demo/sdv-toolchain/scenarios/remote_agent/campaign/local"
+                },
+                "handleErrors": true
+            }
+        },
+        "selfDriving": true
+    }
+}

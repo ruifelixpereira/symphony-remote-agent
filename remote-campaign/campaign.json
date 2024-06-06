@@ -1,0 +1,32 @@
+{
+    "metadata": {
+        "name": "run-cmd-campaign"
+    },
+    "spec": {
+        "firstStage": "deploy",
+        "stages": {
+            "deploy": {
+                "name": "deploy",
+                "description": "run bash stuff on target",
+                "provider": "providers.stage.materialize",
+                "config": {
+                    "baseUrl": "http://localhost:8082/v1alpha2/",
+                    "user": "admin",
+                    "password": ""
+                },
+                "inputs": {
+                    "names": ["target-runtime-remote-campaign-cmd-instance"]
+                },
+                "stageSelector": "end"
+            },
+            "end": {
+                "name": "end",
+                "description": "end stage",
+                "provider": "providers.stage.mock",
+                "config": {
+                }
+            }
+        },
+        "selfDriving": true
+    }
+}

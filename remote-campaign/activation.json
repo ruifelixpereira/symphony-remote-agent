@@ -1,0 +1,8 @@
+{
+    "spec": {
+        "campaign": "run-cmd-campaign",
+        "name": "run-cmd-campaign-activation",
+        "stage": "",
+        "inputs": {}
+    }
+}

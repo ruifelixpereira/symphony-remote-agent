@@ -1,0 +1,25 @@
+{
+    "metadata": {
+        "namespace": "default",
+        "name": "target-runtime-remote-cmd-solution"
+    },
+    "spec": {
+        "displayName": "target-runtime-remote-cmd-solution",
+        "components": [
+            {
+                "name": "remote-cmd1",
+                "type": "remote-cmd",
+                "properties": {
+                    "command": "echo $(date \"+%Y.%m.%d-%H:%M:%S\") 'Hello, World!' >> /tmp/hello"
+                }
+            },
+            {
+                "name": "remote-cmd2",
+                "type": "remote-cmd",
+                "properties": {
+                    "command": "echo $(cpu-info) >> /tmp/cpuinfo"
+                }
+            }
+        ]
+    }
+}

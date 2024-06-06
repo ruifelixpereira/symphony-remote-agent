@@ -1,0 +1,18 @@
+{
+    "metadata": {
+        "namespace": "default",
+        "name": "target-runtime-remote-campaign-cmd-solution"
+    },
+    "spec": {
+        "displayName": "target-runtime-remote-campaign-cmd-solution",
+        "components": [
+            {
+                "name": "remote-cmd0",
+                "type": "remote-cmd",
+                "properties": {
+                    "command": "echo $(date \"+%Y.%m.%d-%H:%M:%S\") 'Campaign' >> /tmp/hello_campaign"
+                }
+            }
+        ]
+    }
+}

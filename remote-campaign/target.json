@@ -1,0 +1,23 @@
+{
+    "spec": {
+        "displayName": "remote-cmd",
+        "properties": {
+            "location": "remote-cmd",
+            "scenario": "remote-target"
+        },
+        "topologies": [
+            {
+                "bindings": [
+                    {
+                        "role": "remote-cmd",
+                        "provider": "providers.target.proxy",
+                        "config": {
+                            "name": "proxy",
+                            "serverUrl": "http://localhost:8098/v1alpha2/solution/"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

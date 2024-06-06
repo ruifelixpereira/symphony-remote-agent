@@ -1,0 +1,18 @@
+{
+    "metadata": {
+        "namespace": "default",
+        "name": "target-runtime-remote-campaign-cmd-instance"
+    },
+    "spec": {
+        "displayName": "target-runtime-remote-campaign-cmd-instance",
+        "type": "instance",
+        "properties": {
+            "spec": {
+                "solution": "target-runtime-remote-campaign-cmd-solution",
+                "target": {
+                    "name": "remote-cmd"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "spec": {
+        "name": "target-runtime-remote-cmd-instance",
+        "displayName": "target-runtime-remote-cmd-instance",
+        "solution": "target-runtime-remote-cmd-solution",
+        "target": {
+            "name": "remote-cmd"
+        }
+    }
+}
