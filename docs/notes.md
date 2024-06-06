@@ -80,6 +80,7 @@ When using `jq` to filter the json output you might jump into `jq: error: Could 
 
 ```bash
 $ cat test.json
+
 [
  {
   "action": "update",
@@ -146,6 +147,7 @@ At this stage you can uninstall the `jq` snap package:
 
 ```bash	
 sudo snap remove jq
+```
 
 And move the `jq-linux-amd64` binary to `/usr/local/bin` to make it available in the path:
 
