@@ -13,8 +13,6 @@ In this scenario, you will:
    * Using an Instance for an immediate reconciliation (Solution, Target, Instance).
    * Using a Campaign for a deffered reconciliation (Campaign, Activation).
 
-We use a catalog object instead of an instance object here because an instance object represents a desired state, which will trigger Symphony state reconciliation. In this case, however, we don’t want the state reconciliation to be triggered before approval. Hence, we capture the “intention of the desired state” in a catalog object. The intention will be “materialized” into an instance object only after approval.
-
 Although this scenario is designed for a distributed environment, for simplicity we'll set up everything on a single machine.
 
 ## 1. Prepare a Linux target machine
