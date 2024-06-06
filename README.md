@@ -11,7 +11,7 @@ In this scenario, you will:
 * Configure a script provider on the target machine to perform the state seeking operations to ensure that the shell commands are executed.
 * Explore 2 options to deploy a Solution:
    * Using an Instance for an immediate reconciliation (Solution, Target, Instance).
-   * Using a Campaign for a deffered reconciliation (Campaign, Activation).
+   * Using a Campaign for a differed reconciliation (Campaign, Activation).
 
 Although this scenario is designed for a distributed environment, for simplicity we'll set up everything on a single machine.
 
