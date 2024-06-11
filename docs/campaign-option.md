@@ -6,12 +6,12 @@ In this scenario, application deployment is carried out using a Symphony `campai
 
 1. Define your application as a Symphony `solution` object and your deployment target as a Symphony `target` object.
 
-2. Define your deployment topology as a Symphony `instance` object wrapped in a Symphony `catalog` object. 
+1. Define your deployment topology as a Symphony `instance` object wrapped in a Symphony `catalog` object. 
     > **Note:** We use a catalog object instead of an instance object here because an instance object represents a desired state, which will trigger Symphony state reconciliation. In this case, however, we don’t want the state reconciliation to be triggered immediately. Hence, we capture the "intention of the desired state" in a catalog object. The intention will be "materialized" into an instance object only after the campaign is activated.
 
-3. Define a Symphony `campaign` object that can execute several steps, including the `materialization` of an instance, and then drives application deployment.
+1. Define a Symphony `campaign` object that can execute several steps, including the `materialization` of an instance, and then drives application deployment.
 
-4. Create an `activation` object to activate the campaign.
+1. Create an `activation` object to activate the campaign.
 
 
 ## Sample artifacts
@@ -29,17 +29,19 @@ You can find sample artifacts in this repository under the `remote-campaign` fol
 
 ## Deployment steps
 
+1. Edit Symphony target object in `target.json` and change `<YOUR REMOTE VM IP>` to the IP address of your remote VM running the Symphony agent.
+
 1. Create Symphony objects using the provided shell script (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
     ```bash
     ./s01-deploy-objects.sh
     ```
 
-2. Activate the campaign (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
+1. Activate the campaign (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
     ```bash
     ./s02-activate-campaign.sh
     ```
 
-3. Observe the instance is created and the sample application is deployed (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
+1. Observe the instance is created and the sample application is deployed (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
     ```bash
     ./s03-validate-instance.sh # gets all instances
 

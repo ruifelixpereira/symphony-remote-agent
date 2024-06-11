@@ -48,6 +48,8 @@ Although this scenario is designed for a distributed environment, for simplicity
     * symphony-agent.json
     * symphony-api
     * symphony-api-no-k8s.json
+    * symphony-agent-systemd.sh
+    * symphony_agent.service
 
 
 ## 2. Launch the Symphony API
@@ -68,6 +70,8 @@ Also under the `/home/rfp/demo` folder, launch the Symphony agent:
 ```bash
 ./s02-start-symphony-agent.sh
 ```
+
+If you want to run the agent as a daemon, check the [daemon](docs/daemon.md) document.
 
 ## 4. Options for deployment
 

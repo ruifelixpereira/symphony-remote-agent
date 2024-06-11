@@ -6,7 +6,7 @@ In this scenario, application deployment is carried out using a typical Symphony
 
 1. Define your application as a Symphony `solution` object and your deployment target as a Symphony `target` object.
 
-2. Define your deployment topology as a Symphony `instance` and create the object to trigger the reconciliation and deployment of the application.
+1. Define your deployment topology as a Symphony `instance` and create the object to trigger the reconciliation and deployment of the application.
 
 
 ## Sample artifacts
@@ -22,12 +22,14 @@ You can find sample artifacts in this repository under the `remote-target` folde
 
 ## Deployment steps
 
+1. Edit Symphony target object in `target.json` and change `<YOUR REMOTE VM IP>` to the IP address of your remote VM running the Symphony agent.
+
 1. Create Symphony objects using the provided shell script (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
     ```bash
     ./s01-deploy-objects.sh
     ```
 
-2. Observe the instance is created and the sample application is deployed (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
+1. Observe the instance is created and the sample application is deployed (make sure you validate if the variable `SYMPHONY_BASE_URL` defined in the script is pointing to your Symphony API control plane):
     ```bash
     ./s02-validate-instance.sh # gets all instances
 

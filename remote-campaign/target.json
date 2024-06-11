@@ -13,7 +13,7 @@
                         "provider": "providers.target.proxy",
                         "config": {
                             "name": "proxy",
-                            "serverUrl": "http://localhost:8098/v1alpha2/solution/"
+                            "serverUrl": "http://<YOUR REMOTE VM IP>:8098/v1alpha2/solution/"
                         }
                     }
                 ]

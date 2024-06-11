@@ -1,0 +1,12 @@
+[Unit]
+Description=Symphony Agent
+After=network.target
+
+[Service]
+Type=simple
+User=demouser
+ExecStart=<your base directory>/symphony-agent-systemd.sh
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
